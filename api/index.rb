@@ -5,7 +5,7 @@ Handler = Proc.new do |req, res|
 
   if req['Accept'].include? 'application/json'
     res['Content-Type'] = 'application/json; charset=utf-8'
-    res.body %Q!{"value":#{n}}!
+    res.body = %Q!{"value":#{n}}!
     return
   end
 
