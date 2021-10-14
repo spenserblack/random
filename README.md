@@ -29,3 +29,6 @@ can be used without `min`, but `min` *must have a `max` value*.
 ![roll](https://img.shields.io/badge/dynamic/json?color=informational&label=dice%20roll&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi%3Fmin%3D1%26max%3D6)
 ```
 ![roll](https://img.shields.io/badge/dynamic/json?color=informational&label=dice%20roll&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi%3Fmin%3D1%26max%3D6)
+
+***NOTE*** If this badge doesn't change after you refresh a bunch of times, it's not because the randomness is broken, nor
+did you get incredibly lucky (or unlucky). The image is cached by your browser and won't update for a few minutes.
