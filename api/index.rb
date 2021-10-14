@@ -6,13 +6,13 @@ Handler = Proc.new do |req, res|
   when 0b00
     n = rand
   when 0b01
-    n = rand(max + 1)
+    n = rand(max.to_i + 1)
   when 0b10
     res.status = 400
     res.body = 'parameter "min" requires parameter "max"'
     next
   when 0b11
-    n = rand min..max
+    n = rand min.to_i..max.to_i
   end
 
   res.status = 200
