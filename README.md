@@ -17,11 +17,15 @@ If you set the `Accept` header to `application/json`, then the response will be 
 {"value":0.123}
 ```
 
+You can use an optional `min` and `max` value in the query parameters. This will cause the
+value in the response to be a *integer between `min` and `max`* instead of a float. `max`
+can be used without `min`, but `min` *must have a `max` value*.
+
 ## Example
 
 ### Randomized Badge
 
 ```markdown
-![random badge](https://img.shields.io/badge/dynamic/json?color=informational&label=random%20number&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi)
+![roll](https://img.shields.io/badge/dynamic/json?color=informational&label=dice%20roll&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi%3Fmin%3D1%26max%3D6)
 ```
-![random badge](https://img.shields.io/badge/dynamic/json?color=informational&label=random%20number&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi)
+![roll](https://img.shields.io/badge/dynamic/json?color=informational&label=dice%20roll&query=value&url=http%3A%2F%2Frandom-nu-five.vercel.app%2Fapi%3Fmin%3D1%26max%3D6)
