@@ -24,7 +24,7 @@ You can use an optional `min` and `max` value in the query parameters. This will
 value in the response to be a *integer between `min` and `max`* instead of a float. `max`
 can be used without `min`, but `min` *must have a `max` value*.
 
-## Example
+## Examples
 
 ### Randomized Badge
 
