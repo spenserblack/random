@@ -17,6 +17,9 @@ If you set the `Accept` header to `application/json`, then the response will be 
 {"value":0.123}
 ```
 
+The [`/api/select/:items` endpoint](http://random-nu-five.vercel.app/api/select) selects a random
+value from `items`. The default separator is `,`, but it can be changed with `?separator`.
+
 You can use an optional `min` and `max` value in the query parameters. This will cause the
 value in the response to be a *integer between `min` and `max`* instead of a float. `max`
 can be used without `min`, but `min` *must have a `max` value*.
@@ -32,3 +35,10 @@ can be used without `min`, but `min` *must have a `max` value*.
 
 ***NOTE*** If this badge doesn't change after you refresh a bunch of times, it's not because the randomness is broken, nor
 did you get incredibly lucky (or unlucky). The image is cached by your browser and won't update for a few minutes.
+
+### Coin Flip
+
+```markdown
+[Flip a coin!](http://random-nu-five.vercel.app/api/select/heads|tails?separator=|)
+```
+[Flip a coin!](http://random-nu-five.vercel.app/api/select/heads|tails?separator=|)
