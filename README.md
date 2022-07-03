@@ -9,6 +9,8 @@ and/or committing changes to the badge URL.
 
 ## Usage
 
+### Random Numbers
+
 Hit the [`/api` endpoint](http://random-nu-five.vercel.app/api) to get a random float between
 `0` and `1`.
 
@@ -17,12 +19,14 @@ If you set the `Accept` header to `application/json`, then the response will be 
 {"value":0.123}
 ```
 
-The [`/api/select/:items` endpoint](http://random-nu-five.vercel.app/api/select) selects a random
-value from `items`. The default separator is `,`, but it can be changed with `?separator`.
-
 You can use an optional `min` and `max` value in the query parameters. This will cause the
 value in the response to be a *integer between `min` and `max`* instead of a float. `max`
 can be used without `min`, but `min` *must have a `max` value*.
+
+### Picking Items Randomly
+
+The [`/api/select/:items` endpoint](http://random-nu-five.vercel.app/api/select) selects a random
+value from `items`. The default separator is `,`, but it can be changed with `?separator`.
 
 ## Examples
 
